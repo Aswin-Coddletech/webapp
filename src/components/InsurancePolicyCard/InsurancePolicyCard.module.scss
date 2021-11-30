@@ -1,0 +1,60 @@
+@import "src/assets/styles/colors.scss";
+
+.root {
+  width: 100%;
+  padding: 16px;
+}
+
+.table {
+  margin: 0 auto;
+
+  tr > th {
+    background-color: #f5f4f4;
+    color: #000;
+    font-weight: bold;
+  }
+
+  tr > th,
+  tr > td {
+    padding: 5px 16px;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 0;
+}
+
+.action {
+  font-size: 1em;
+  cursor: pointer;
+
+  &:not(:first-child) {
+    margin-left: 1.5em;
+  }
+
+  &:hover {
+    color: $melloon-primary;
+  }
+}
+
+.disabledAction {
+  @extend .action;
+
+  opacity: 0.3;
+}
+
+.active {
+  color: $melloon-primary;
+}
+
+.hideMeForMobile {
+  padding: 0 0;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}

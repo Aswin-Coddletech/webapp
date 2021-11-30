@@ -1,0 +1,143 @@
+[
+  {
+    "modifiedAt": "2020-02-20T14:47:07.422Z",
+    "categoryId": "C210",
+    "parentCategoryId": "C21",
+    "locale": {
+      "category": {
+        "pt": "Smartwatches",
+        "en": "Smartwatches",
+        "es": "Smartwatches"
+      }
+    },
+    "category": "Smartwatches",
+    "createdAt": "2020-02-20T14:47:07.422Z",
+    "isLoansAllowed": true,
+    "icon": "smartwatch.svg"
+  },
+  {
+    "modifiedAt": "2020-02-20T14:47:07.422Z",
+    "categoryId": "C101",
+    "parentCategoryId": "C10",
+    "locale": {
+      "category": {
+        "pt": "Netbooks",
+        "en": "Netbooks",
+        "es": "Netbooks"
+      }
+    },
+    "category": "Netbooks",
+    "createdAt": "2020-02-20T14:47:07.422Z",
+    "isLoansAllowed": true
+  },
+  {
+    "modifiedAt": "2020-02-20T14:47:07.422Z",
+    "categoryId": "C40",
+    "parentCategoryId": "C4",
+    "locale": {
+      "category": {
+        "pt": "Consolas de Jogos",
+        "en": "Gaming Consoles",
+        "es": "Consolas de Juego"
+      }
+    },
+    "category": "Gaming Consoles",
+    "createdAt": "2020-02-20T14:47:07.422Z",
+    "isLoansAllowed": true,
+    "icon": "game-console.svg"
+  },
+  {
+    "modifiedAt": "2020-02-20T14:47:07.422Z",
+    "categoryId": "C30",
+    "parentCategoryId": "C3",
+    "locale": {
+      "category": {
+        "pt": "Câmeras",
+        "en": "Cameras",
+        "es": "Cámaras"
+      }
+    },
+    "category": "Cameras",
+    "createdAt": "2020-02-20T14:47:07.422Z",
+    "isLoansAllowed": true,
+    "icon": "camera.svg"
+  },
+  {
+    "modifiedAt": "2020-02-20T14:47:07.422Z",
+    "categoryId": "C100",
+    "parentCategoryId": "C10",
+    "locale": {
+      "category": {
+        "pt": "Laptops",
+        "en": "Laptops",
+        "es": "Laptops"
+      }
+    },
+    "category": "Laptops",
+    "createdAt": "2020-02-20T14:47:07.422Z",
+    "isLoansAllowed": true,
+    "icon": "laptop.svg"
+  },
+  {
+    "modifiedAt": "2020-02-20T14:47:07.422Z",
+    "categoryId": "C20",
+    "parentCategoryId": "C2",
+    "locale": {
+      "category": {
+        "pt": "Celulares e Smartphones",
+        "en": "Cell Phones and Smartphones",
+        "es": "Celulares y Smartphones"
+      }
+    },
+    "category": "Cell Phones and Smartphones",
+    "createdAt": "2020-02-20T14:47:07.422Z",
+    "isLoansAllowed": true,
+    "icon": "smartphone.svg"
+  },
+  {
+    "modifiedAt": "2020-02-20T14:47:07.422Z",
+    "categoryId": "C500",
+    "parentCategoryId": "C50",
+    "locale": {
+      "category": {
+        "pt": "Fones de Ouvido",
+        "en": "Speakers and Headphones",
+        "es": "Audífonos"
+      }
+    },
+    "category": "Speakers and Headphones",
+    "createdAt": "2020-02-20T14:47:07.422Z",
+    "isLoansAllowed": true
+  },
+  {
+    "modifiedAt": "2020-02-20T14:47:07.422Z",
+    "categoryId": "C110",
+    "parentCategoryId": "C11",
+    "locale": {
+      "category": {
+        "pt": "Tablets",
+        "en": "Tablets",
+        "es": "Tablets"
+      }
+    },
+    "category": "Tablets",
+    "createdAt": "2020-02-20T14:47:07.422Z",
+    "isLoansAllowed": true,
+    "icon": "tablet.svg"
+  },
+  {
+    "modifiedAt": "2020-02-20T14:47:07.422Z",
+    "categoryId": "C102",
+    "parentCategoryId": "C10",
+    "locale": {
+      "category": {
+        "pt": "Ultrabooks",
+        "en": "Ultrabooks",
+        "es": "Ultrabooks"
+      }
+    },
+    "category": "Ultrabooks",
+    "createdAt": "2020-02-20T14:47:07.422Z",
+    "isLoansAllowed": true
+  }
+]

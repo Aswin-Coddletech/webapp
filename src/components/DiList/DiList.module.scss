@@ -1,0 +1,76 @@
+@import "src/assets/styles/colors.scss";
+@import "src/assets/styles/global.scss";
+
+$lightgray: rgb(216, 218, 221);
+
+.summary {
+  padding-top: 0;
+  padding-bottom: 16px;
+  border-color: #fff;
+  border-bottom-color: rgb(245, 243, 243);
+  border-style: solid;
+}
+
+.action {
+  font-size: 1em;
+  cursor: pointer;
+  color: $melloon-primary;
+
+  &:not(:first-child) {
+    margin-left: 0.5em;
+  }
+}
+
+.disabledAction {
+  @extend .action;
+
+  opacity: 0.3;
+}
+
+.active {
+  color: $melloon-primary;
+}
+
+.hideMe {
+  display: none;
+}
+
+.hideMeForMobile {
+  padding: 0 0;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hideMeForSmallScreen {
+  padding: 0 0;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+
+.justifyMeForMobile {
+  justify-content: end;
+
+  @media (max-width: 767px) {
+    justify-content: center;
+  }
+}
+
+.justifyMeForMobileCenter {
+  justify-content: center;
+}
+
+.thumbnail {
+  height: 100px;
+  width: 100px;
+  object-fit: "contain";
+  overflow: hidden;
+
+  @media (max-width: 767px) {
+    height: 50px;
+    width: 50px;
+  }
+}

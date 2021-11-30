@@ -1,0 +1,124 @@
+@import "src/assets/styles/colors.scss";
+@import "src/assets/styles/global.scss";
+
+$lightgray: rgb(216, 218, 221);
+
+.summary {
+  padding-top: "0px";
+  padding-bottom: 16px;
+  border-color: #fff;
+  //border-bottom-color: rgb(245, 243, 243);
+  border-style: solid;
+  border-top-color: rgb(245, 243, 243);
+  margin-top: 16px;
+}
+
+.action {
+  font-size: 1em;
+  cursor: pointer;
+  color: $melloon-primary;
+
+  &:not(:first-child) {
+    margin-left: 0.5em;
+  }
+}
+
+.disabledAction {
+  @extend .action;
+
+  opacity: 0.3;
+}
+
+.active {
+  color: $melloon-primary;
+}
+
+.hideMe {
+  display: none;
+}
+
+.hideMeForMobile {
+  padding: "0px" "0px";
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hideMeForSmallScreen {
+  padding: "0px" "0px";
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+
+.justifyMeForMobile {
+  justify-content: end;
+
+  @media (max-width: 767px) {
+    justify-content: center;
+  }
+}
+
+.justifyMeForMobileCenter {
+  justify-content: center;
+}
+
+.thumbnail {
+  height: 100px;
+  width: 100px;
+  object-fit: "contain";
+  overflow: hidden;
+
+  @media (max-width: 767px) {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.headingName {
+  padding-right: 5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.rowSeperate {
+  padding-bottom: 5px;
+}
+
+.rowButtonSeperate {
+  padding-top: 15px;
+  margin-bottom: -7px;
+}
+
+.itemFooter {
+  color: #bdc3cc;
+  background-color: #f5f5f5;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.displayTextColor {
+  color: $melloon-primary;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.verifiedStyle {
+  color: $melloon-primary;
+  font-weight: bold;
+}
+
+.notesStyle {
+  margin-top: 20px;
+}
+
+.notesTextStyle {
+  font-size: 8px;
+  background-color: transparent;
+  border-color: transparent;
+  color: $melloon-primary;
+}

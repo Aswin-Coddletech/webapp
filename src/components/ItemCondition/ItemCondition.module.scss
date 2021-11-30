@@ -1,0 +1,68 @@
+@import "src/assets/styles/colors.scss";
+@import "src/assets/styles/global.scss";
+
+.sectionTitle {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.conditionBtnGroup {
+  width: 100%;
+
+  :global {
+    .ant-col {
+      display: flex;
+    }
+
+    .ant-radio-button-wrapper {
+      width: 100%;
+      padding: 10px 16px;
+      height: auto;
+      border-radius: 2px !important;
+      margin-bottom: 16px;
+      border-color: #e8e8e8;
+      background: #eee;
+      transition: "all 0.5s ease";
+      color: #000;
+
+      &:hover {
+        border-color: $melloon-primary;
+        color: #000;
+      }
+
+      div {
+        display: block;
+        color: #848484;
+        line-height: 1.5;
+      }
+
+      &-checked {
+        background: $melloon-primary !important;
+        border-color: $melloon-primary !important;
+
+        div {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.inclusionDeisgn {
+  text-align: right;
+}
+
+.alignInclustions {
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.alignInclustions {
+  padding-bottom: 10px;
+}
+
+.inclusionTitle {
+  font-size: 15px;
+}

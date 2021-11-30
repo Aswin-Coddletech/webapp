@@ -1,0 +1,58 @@
+@import "src/assets/styles/colors.scss";
+@import "src/assets/styles/global.scss";
+
+.tableBrandList {
+  table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+
+    thead {
+      display: none;
+    }
+
+    tr {
+      td {
+        padding: 16px;
+        background-color: #eee;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        cursor: pointer;
+
+        &:first-child {
+          border-left: 1px solid #e8e8e8;
+          border-radius: "2px 0px 0px 2px";
+        }
+
+        &:last-child {
+          border-right: 1px solid #e8e8e8;
+          border-radius: "0px 2px 2px 0px";
+        }
+
+        :global {
+          .ant-radio-inner::after {
+            display: inline-block;
+          }
+        }
+      }
+
+      &:hover {
+        & > td {
+          border-color: $melloon-primary;
+          background-color: #eee !important;
+        }
+      }
+    }
+
+    :global {
+      .ant-table-row-selected td {
+        border-color: $melloon-primary !important;
+      }
+    }
+  }
+}
+
+.sectionTitle {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}

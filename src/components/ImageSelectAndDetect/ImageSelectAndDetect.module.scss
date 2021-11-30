@@ -1,0 +1,67 @@
+.root {
+  width: 100%;
+  padding: 20px;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+.avatar-uploader > .ant-upload {
+  width: 128px;
+  height: 128px;
+}
+
+.itemimage {
+  height: "100px";
+  width: "100px";
+  object-fit: "contain";
+  overflow: hidden;
+}
+
+.ant-table {
+  font-size: 1em;
+}
+
+.table {
+  font-size: 1em;
+
+  tr > th {
+    background-color: #bfbfbf;
+    color: #000;
+    font-weight: bold;
+  }
+
+  tr > th,
+  tr > td {
+    padding: 2px 16px;
+    border-color: #7f7f7f;
+  }
+
+  tr:hover:not(:global(.ant-table-expanded-row)) > td {
+    background-color: #e6e8ee;
+  }
+}
+
+.hideMeForMobile {
+  padding: 0 0;
+}
+
+@media (max-width: 767px) {
+  .hideMeForMobile {
+    display: none;
+  }
+}
+
+.centerMeForMobile {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .centerMeForMobile {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}

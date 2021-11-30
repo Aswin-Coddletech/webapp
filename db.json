@@ -1,0 +1,130 @@
+{
+    "customer": [
+        {
+            "userId": "C101",
+            "name": "Aswin",
+            "address": "Kerala",
+            "email": "aswin@gmail.com",
+            "phone": 9746523896
+        },
+        {
+            "userId": "C102",
+            "name": "Rahul",
+            "address": "Karnataka",
+            "email": "rahul@gmail.com",
+            "phone": 9996523896
+        },
+        {
+            "userId": "C103",
+            "name": "Shyam",
+            "address": "Tamil Nadu",
+            "email": "shyam@gmail.com",
+            "phone": 9896523896
+        },
+        {
+            "userId": "C104",
+            "name": "Pranav",
+            "address": "Kerala",
+            "email": "pranav@gmail.com",
+            "phone": 9746523786
+        },
+        {
+            "userId": "C105",
+            "name": "Kevin",
+            "address": "Hyderabad",
+            "email": "kevin@gmail.com",
+            "phone": 9946523896
+        },
+        {
+            "userId": "C106",
+            "name": "Ravi",
+            "address": "Kerala",
+            "email": "ravi@gmail.com",
+            "phone": 9746523888
+        },
+        {
+            "userId": "C101",
+            "name": "Aswin",
+            "address": "Kerala",
+            "email": "aswin@gmail.com",
+            "phone": 9746523896
+        },
+        {
+            "userId": "C102",
+            "name": "Rahul",
+            "address": "Karnataka",
+            "email": "rahul@gmail.com",
+            "phone": 9996523896
+        },
+        {
+            "userId": "C103",
+            "name": "Shyam",
+            "address": "Tamil Nadu",
+            "email": "shyam@gmail.com",
+            "phone": 9896523896
+        },
+        {
+            "userId": "C104",
+            "name": "Pranav",
+            "address": "Kerala",
+            "email": "pranav@gmail.com",
+            "phone": 9746523786
+        },
+        {
+            "userId": "C105",
+            "name": "Kevin",
+            "address": "Hyderabad",
+            "email": "kevin@gmail.com",
+            "phone": 9946523896
+        },
+        {
+            "userId": "C106",
+            "name": "Ravi",
+            "address": "Kerala",
+            "email": "ravi@gmail.com",
+            "phone": 9746523888
+        },
+        {
+            "userId": "C101",
+            "name": "Aswin",
+            "address": "Kerala",
+            "email": "aswin@gmail.com",
+            "phone": 9746523896
+        },
+        {
+            "userId": "C102",
+            "name": "Rahul",
+            "address": "Karnataka",
+            "email": "rahul@gmail.com",
+            "phone": 9996523896
+        },
+        {
+            "userId": "C103",
+            "name": "Shyam",
+            "address": "Tamil Nadu",
+            "email": "shyam@gmail.com",
+            "phone": 9896523896
+        },
+        {
+            "userId": "C104",
+            "name": "Pranav",
+            "address": "Kerala",
+            "email": "pranav@gmail.com",
+            "phone": 9746523786
+        },
+        {
+            "userId": "C105",
+            "name": "Kevin",
+            "address": "Hyderabad",
+            "email": "kevin@gmail.com",
+            "phone": 9946523896
+        },
+        {
+            "userId": "C106",
+            "name": "Ravi",
+            "address": "Kerala",
+            "email": "ravi@gmail.com",
+            "phone": 9746523888
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+@import "src/assets/styles/colors.scss";
+@import "src/assets/styles/global.scss";
+
+.root {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 0;
+}
+
+.action {
+  font-size: 1em;
+  cursor: pointer;
+
+  &:not(:first-child) {
+    margin-left: 1em;
+  }
+
+  &:hover {
+    color: $melloon-primary;
+  }
+}
+
+.disabledAction {
+  @extend .action;
+
+  opacity: 0.3;
+}
+
+.blueText {
+  color: $melloon-primary;
+}
+
+.greyText {
+  color: $melloon-date-fineprint;
+}
+
+.thumbnail {
+  float: left;
+  height: 100px;
+  width: 100px;
+  object-fit: "contain";
+  overflow: hidden;
+
+  @media (max-width: 767px) {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.actionbuttons {
+  text-align: center;
+}
+
+.actionbutton {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.successMessage {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin: 0 auto;
+  vertical-align: top;
+}
+
+.hideMeForMobile {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hideMeForDesktop {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.radioStyleHideForMobile {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}

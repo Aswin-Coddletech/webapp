@@ -1,0 +1,11 @@
+@import 'src/assets/styles/colors.scss';
+
+.ant-tabs-nav .ant-tabs-tab-active {
+    color: red !important;
+    background-color: green !important;
+    background: green !important;
+}
+.titleBar {
+    margin-bottom: 24px;
+    border-bottom: 2px solid $melloon-chat-light;
+}

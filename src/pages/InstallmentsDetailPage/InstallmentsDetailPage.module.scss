@@ -1,0 +1,122 @@
+@import 'src/assets/styles/colors.scss';
+.root {
+    width: 100%;
+}
+.titleBar {
+    margin-bottom: 24px;
+    border-bottom: 2px solid $melloon-chat-light;
+}
+.actions {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 0;
+}
+
+.action {
+    font-size: 1em;
+    cursor: pointer;
+
+    &:not(:first-child) {
+        margin-left: 1em;
+    }
+
+    &:hover {
+        color: $melloon-primary;
+    }
+}
+
+.disabledAction {
+    @extend .action;
+
+    opacity: 0.3;
+}
+
+.active {
+    color: $melloon-primary;
+}
+
+.hideMeForMobile {
+    padding: 0 0;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.sectionTitle {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.sectionSubTitle {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.loanLabel {
+    font-size: 14px;
+
+    @media (max-width: 480px) {
+        font-size: 13px;
+    }
+}
+
+.loanstat_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h5:first-child {
+        flex: 1;
+    }
+}
+
+.loan_stat {
+    border: 1px solid #e8e8e8;
+    background-color: #f2f2f2;
+    border-radius: 2px;
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+.backColorStyle {
+    background-color: #eee;
+}
+
+@media (min-width: 767px) {
+    .btnStyle {
+        margin-top: 100px !important;
+    }
+}
+
+.rowSeperate {
+    padding: 10px;
+}
+
+.inputWrapper {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.buttonStyle {
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .buttonStyle {
+        flex-direction: column;
+    }
+}
+
+.tableStyle:hover {
+    background: #ffffff !important;
+}
+
+.tableHeading {
+    text-align: center !important;
+}

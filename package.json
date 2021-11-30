@@ -1,0 +1,90 @@
+{
+  "name": "finnuboapp",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@types/classnames": "^2.2.9",
+    "@types/jest": "^24.9.1",
+    "@types/jsonwebtoken": "^8.3.7",
+    "@types/node": "^12.12.28",
+    "@types/react": "^16.9.21",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-redux": "^7.1.7",
+    "@types/react-router-dom": "^5.1.3",
+    "antd": "^4.0.1",
+    "babel-plugin-import": "^1.13.0",
+    "classnames": "^2.2.6",
+    "customize-cra": "^0.9.1",
+    "env-cmd": "^10.1.0",
+    "husky": "^4.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^10.0.7",
+    "node-sass": "^4.13.1",
+    "prettier": "^1.19.1",
+    "prop-types": "^15.7.2",
+    "prop-types-exact": "^1.2.0",
+    "react": "^16.12.0",
+    "react-app-rewired": "^2.1.5",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-saga": "^1.1.3",
+    "reselect": "^4.0.0",
+    "source-map-explorer": "^2.3.1",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "currency.js": "^1.2.2",
+    "json-server": "^0.17.0",
+    "moment": "^2.24.0",
+    "node": "^12.18.0",
+    "nvm": "0.0.4",
+    "react-circular-progressbar": "^2.0.4",
+    "react-infinite-scroller": "^1.2.4",
+    "react-intercom": "^1.0.15",
+    "react-intl": "^4.1.0",
+    "react-progressbar-line": "^1.0.2",
+    "react-stripe-checkout": "^2.6.3",
+    "superagent": "^5.2.2"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "build:staging": "env-cmd -f .env.staging npm run build",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "lint": "lint-staged",
+    "test": "react-app-rewired test",
+    "eject": "DO-NOT-EJECT react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
+  },
+  "proxy": "http://localhost:3004",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

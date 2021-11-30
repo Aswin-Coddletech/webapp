@@ -1,0 +1,22 @@
+[
+  {
+    "key": "new",
+    "status": "New",
+    "description": "with original box and closed"
+  },
+  {
+    "key": "almost_new",
+    "status": "Almost New",
+    "description": "used, without aesthetic details"
+  },
+  {
+    "key": "good",
+    "status": "Good",
+    "description": "used, with aesthetic details, wear and scratches"
+  },
+  {
+    "key": "acceptable",
+    "status": "Acceptable",
+    "description": "used, with aesthetic details, notable strokes"
+  }
+]

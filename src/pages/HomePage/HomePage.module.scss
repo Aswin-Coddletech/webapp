@@ -1,0 +1,77 @@
+@import "../../assets/styles/colors";
+@import "../../assets/styles/global";
+
+.root {
+  width: 100%;
+}
+
+.banner {
+  background-image: url(../../assets/images/melloon-green-home-bg1.png);
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-align: center;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  color: $white;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.headerForMobile {
+  color: $white;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center !important;
+  font-size: 1.5em;
+
+  @media (max-width: 767px) {
+    width: 230px;
+    word-wrap: break-word;
+  }
+}
+
+.headerlinks {
+  display: inline;
+  color: $white;
+}
+
+.footerbanner {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  color: $white;
+  align-items: center;
+}
+
+.hideMeForMobile {
+  display: inline;
+}
+
+@media (max-width: 767px) {
+  .hideMeForMobile {
+    display: none;
+  }
+}

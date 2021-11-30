@@ -1,0 +1,133 @@
+@import "src/assets/styles/colors.scss";
+
+.root {
+  width: 100%;
+  padding: 16px;
+}
+
+.table {
+  margin: 0 auto;
+
+  tr > th {
+    background-color: #f5f4f4;
+    color: #000;
+    font-weight: bold;
+  }
+
+  tr > th,
+  tr > td {
+    padding: 5px 16px;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 0;
+}
+
+.action {
+  font-size: 1em;
+  cursor: pointer;
+
+  &:not(:first-child) {
+    margin-left: 1.5em;
+  }
+
+  &:hover {
+    color: $melloon-primary;
+  }
+}
+
+.disabledAction {
+  @extend .action;
+
+  opacity: 0.3;
+}
+
+.active {
+  color: $melloon-primary;
+}
+
+.hideMeForMobile {
+  padding: 0 0;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.successMsg {
+  margin-bottom: 10px;
+}
+.circularProgress {
+  width: 130px;
+  height: 130px;
+  margin-top: 10px;
+  align-items: "right";
+}
+.displayScore {
+  margin-top: -15px;
+  font-size: 30px;
+}
+.riskDesc {
+  font-size: 10px;
+  margin-top: -2px;
+}
+.riskBandTitle {
+  display: flex;
+  align-items: flex-end;
+}
+.riskBandLineBar {
+  width: 150px;
+  margin-left: 20px;
+  margin-bottom: 6px;
+}
+.tableMainContainer {
+  width: 100%;
+  margin-top: 20px;
+}
+.tableContainer {
+  width: 50%;
+}
+.evenItem {
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.oddItem {
+  padding: 5px;
+  background: rgba(183, 226, 212, 0.4);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.chartContainer {
+  margin-top: 20px;
+  margin-left: 20%;
+}
+.supportDataSubColumns {
+  padding: 5px;
+  background: #ededed;
+}
+:global {
+  .ant-collapse {
+    border: 0;
+    &-item {
+      border-radius: 4px;
+      border: 1px solid #d9d9d9;
+      margin-bottom: 16px;
+      overflow: hidden;
+      .ant-descriptions-item-label {
+        font-weight: 500;
+      }
+    }
+    &-header {
+      font-weight: 600;
+      background-color: #f0f2f5;
+    }
+  }
+}

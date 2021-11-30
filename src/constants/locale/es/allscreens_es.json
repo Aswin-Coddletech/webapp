@@ -1,0 +1,21 @@
+{
+  "global": {
+    "already.account": "¿Ya tienes una cuenta?",
+    "welcome": "¡Bienvenido a Finnu! Empeña un artículo fácilmente desde casa",
+    "currency": "MXN",
+    "currencySymbol": "$"
+  },
+  "user-account": {
+    "signin.title": "Registrarse"
+  },
+  "kyc": {
+    "NOT_STARTED_DISPLAY_TEXT": "Esto solo lleva unos minutos: haga clic en “Verificarme”",
+    "INPUTS_NOT_COMPLETED": "¡Gracias por comenzar el proceso KYC! Por favor complete todas las entradas",
+    "REVIEW_IN_PROGRESS": "¡Gracias por enviar los detalles de KYC! Están siendo revisados.",
+    "NOT_VERIFIED": "¡Gracias por enviar los detalles de KYC! No podemos verificar la información / documentos enviados por usted. Vuelva a enviar la información haciendo clic en  “Verificar”",
+    "VERIFIED": "Verificado",
+    "EXITED": "¡Gracias! Vuelve más tarde para completar el proceso de verificación."
+  },
+  "labels": {},
+  "forms": {}
+}

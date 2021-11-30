@@ -1,0 +1,93 @@
+@import "src/assets/styles/colors.scss";
+@import "src/assets/styles/global.scss";
+
+.cardImgStyle {
+  text-align: center;
+  font-size: 13px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  :global {
+    .ant-card-body {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .cardImage {
+    background: #eee;
+    padding: 20px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+.cardImgActive {
+  text-align: center;
+  border-color: $melloon-primary;
+  color: $melloon-primary;
+  font-size: 13px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  :global {
+    .ant-card-body {
+      background-color: $melloon-primary;
+      color: white;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .cardImage {
+    padding: 20px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    i {
+      color: #fff;
+    }
+  }
+
+  &:hover {
+    border: 1px solid $melloon-primary;
+  }
+}
+
+.sectionTitle {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.listDesign {
+  :global {
+    .ant-row {
+      display: flex;
+      flex-wrap: wrap;
+      .ant-col {
+        display: flex;
+        .ant-list-item {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

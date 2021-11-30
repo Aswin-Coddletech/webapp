@@ -1,0 +1,75 @@
+@import './colors';
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+        'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $elephant;
+    font-size: 14px;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+:global {
+    .ant {
+        &-pagination {
+            .ant-pagination-item {
+                border-radius: 2px;
+                margin: 0 2px !important;
+                &:not(.ant-pagination-item-active) {
+                    background-color: $melloon-chat-light !important;
+                }
+                &-active {
+                    background-color: $melloon-disabled-menu !important;
+                    border-color: transparent;
+                }
+            }
+        }
+        &-table {
+            thead {
+                & > tr > th {
+                    background-color: rgba($melloon-disabled-menu, 0.4) !important;
+                    color: $melloon-primary;
+                }
+            }
+            &-tbody {
+                tr:nth-child(even) {
+                    background-color: rgba($mercury, 0.5);
+                }
+                & > tr.ant-table-row:hover > td {
+                    background-color: $gallery !important;
+                }
+            }
+            &-content {
+                overflow-x: auto;
+            }
+        }
+        &-card {
+            &-head {
+                background-color: rgba($melloon-disabled-menu, 0.4);
+                color: $melloon-primary;
+            }
+        }
+        &-btn-primary {
+            font-weight: 500;
+        }
+        &-select {
+            @media (max-width: 767px) {
+                width: auto !important;
+                max-width: 100% !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "shop":[
+        {
+            "shopId": "S101",
+            "shopName": "NEWYORK",
+            "shopUrl": "www.newyorkcloths.com",
+            "shopDisplayName": "NEWYORK COLLECTIONS"
+        },
+        {
+            "shopId": "S102",
+            "shopName": "BOBBY",
+            "shopUrl": "www.newbobby.com",
+            "shopDisplayName": "BOBBY BRANDS"
+        },
+        {
+            "shopId": "S103",
+            "shopName": "BLACK&WHITE",
+            "shopUrl": "www.blacknwhite.com",
+            "shopDisplayName": "BLACK & WHITE"
+        },
+        {
+            "shopId": "S104",
+            "shopName": "SPY",
+            "shopUrl": "www.spycollections.com",
+            "shopDisplayName": "SPY"
+        },
+        {
+            "shopId": "S105",
+            "shopName": "FLIP",
+            "shopUrl": "www.flipclothings.com",
+            "shopDisplayName": "FLIP"
+        },
+        {
+            "shopId": "S106",
+            "shopName": "LIFESTYLES",
+            "shopUrl": "www.lifestyles.com",
+            "shopDisplayName": "LIFESTYLE"
+        },
+        {
+            "shopId": "S101",
+            "shopName": "NEWYORK",
+            "shopUrl": "www.newyorkcloths.com",
+            "shopDisplayName": "NEWYORK COLLECTIONS"
+        },
+        {
+            "shopId": "S102",
+            "shopName": "BOBBY",
+            "shopUrl": "www.newbobby.com",
+            "shopDisplayName": "BOBBY BRANDS"
+        },
+        {
+            "shopId": "S103",
+            "shopName": "BLACK&WHITE",
+            "shopUrl": "www.blacknwhite.com",
+            "shopDisplayName": "BLACK & WHITE"
+        },
+        {
+            "shopId": "S104",
+            "shopName": "SPY",
+            "shopUrl": "www.spycollections.com",
+            "shopDisplayName": "SPY"
+        },
+        {
+            "shopId": "S105",
+            "shopName": "FLIP",
+            "shopUrl": "www.flipclothings.com",
+            "shopDisplayName": "FLIP"
+        },
+        {
+            "shopId": "S106",
+            "shopName": "LIFESTYLES",
+            "shopUrl": "www.lifestyles.com",
+            "shopDisplayName": "LIFESTYLE"
+        },
+        {
+            "shopId": "S101",
+            "shopName": "NEWYORK",
+            "shopUrl": "www.newyorkcloths.com",
+            "shopDisplayName": "NEWYORK COLLECTIONS"
+        },
+        {
+            "shopId": "S102",
+            "shopName": "BOBBY",
+            "shopUrl": "www.newbobby.com",
+            "shopDisplayName": "BOBBY BRANDS"
+        },
+        {
+            "shopId": "S103",
+            "shopName": "BLACK&WHITE",
+            "shopUrl": "www.blacknwhite.com",
+            "shopDisplayName": "BLACK & WHITE"
+        },
+        {
+            "shopId": "S104",
+            "shopName": "SPY",
+            "shopUrl": "www.spycollections.com",
+            "shopDisplayName": "SPY"
+        },
+        {
+            "shopId": "S105",
+            "shopName": "FLIP",
+            "shopUrl": "www.flipclothings.com",
+            "shopDisplayName": "FLIP"
+        },
+        {
+            "shopId": "S106",
+            "shopName": "LIFESTYLES",
+            "shopUrl": "www.lifestyles.com",
+            "shopDisplayName": "LIFESTYLE"
+        }
+    ]
+}

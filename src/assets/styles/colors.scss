@@ -1,0 +1,34 @@
+$white: #fff;
+$black: #000;
+$curious-blue: #20a5ce;
+$picton-blue: #46cce1;
+$mercury: #e8e8e8;
+$elephant: #0f3249;
+$dove-gray: #666;
+$alabaster: #f7f7f7;
+$cerulean: #00a7cf;
+$gallery: #eaeaea;
+
+$melloon-primary: #00cc99;
+$melloon-primary-bright: #48a51d;
+$melloon-primary-light: #81faca;
+$melloon-disabled-menu: #b7e2d4;
+
+$melloon-blue: #4374ff;
+$melloon-blue-light: #18b6ff;
+$melloon-bright-blue: #3d72ff;
+$melloon-chat-light: #ebf0ff;
+$melloon-date-fineprint: #8e97a8;
+$melloon-disabled-blue: #aac2ff;
+
+$melloon-primary-old: #1890ff;
+
+:export {
+    colorMelloonPrimary: $melloon-primary;
+    colorMelloonPrimaryLight: $melloon-primary-light;
+    colorMelloonBlue: $melloon-blue;
+    colorMelloonBlueLight: $melloon-blue-light;
+    colorMelloonBrightBlue: $melloon-bright-blue;
+    colorMelloonChatLight: $melloon-chat-light;
+    colorMelloonDateFineprint: $melloon-date-fineprint;
+}

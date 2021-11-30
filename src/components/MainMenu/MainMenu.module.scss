@@ -1,0 +1,85 @@
+@import "src/assets/styles/colors.scss";
+
+.MainMenu {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 42px;
+  margin-bottom: 40px;
+  background-color: $black;
+
+  :global {
+    a {
+      display: inline;
+      line-height: 2;
+      color: #fff;
+
+      &:hover {
+        color: $melloon-primary-light !important;
+      }
+    }
+
+    .ant-menu-submenu-title {
+      color: #fff;
+      margin: 0;
+    }
+
+    .ant-menu-submenu-open {
+      background-color: $melloon-primary;
+
+      .ant-menu-sub {
+        display: flex;
+      }
+    }
+
+    .ant-menu-selected,
+    .ant-menu-item-selected {
+      &::after {
+        display: none;
+      }
+    }
+
+    .ant-menu-item-selected {
+      background-color: $melloon-primary !important;
+
+      a {
+        color: #fff;
+      }
+    }
+
+    .ant-menu-submenu-arrow {
+      display: none;
+    }
+
+    .ant-menu-item {
+      flex: 0 1 auto;
+      width: auto;
+      height: 42px;
+      margin: 0 !important;
+    }
+
+    .ant-menu-sub {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+
+      .ant-menu-item {
+        padding: 0 16px !important;
+
+        a {
+          color: #7f7e7f;
+        }
+
+        &-selected {
+          background-color: #fff !important;
+
+          a {
+            color: $melloon-primary-light;
+          }
+        }
+      }
+    }
+  }
+}
