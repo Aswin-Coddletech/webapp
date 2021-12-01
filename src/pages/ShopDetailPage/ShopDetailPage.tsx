@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import { Spin, Row, Col, Button } from "antd";
 import { RouteComponentProps } from "react-router-dom";
 import { IShop } from "src/interfaces/Shop.interface";
-import ss from "./QuoteDetailPage.module.scss";
+import ss from "./ShopDetail.module.scss";
 import { QuoteCard } from "../../components/QuoteCard/QuoteCard";
 import { IUserAccount } from "src/interfaces/UserAccount.interface";
 

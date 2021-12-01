@@ -40,9 +40,12 @@ const reducer = combineReducers<IShopState>({
     shop(state = {}, action) {
         switch (action.type){
             case action.SHOP_SUCCESS:
+                console.log('~~~~~Shop api result data : ',action.data.list)
                 return action.data.list
             case action.SHOP_FAILURE:
                 return {}
+            default:
+                return state
         }
     }
 
