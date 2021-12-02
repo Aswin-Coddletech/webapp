@@ -20,3 +20,12 @@ export const getProductList = (value) => ({
     ]
 })
 
+export const PRODUCT_REQUEST = `${prefix}/PRODUCT_REQUEST`;
+export const PRODUCT_SUCCESS = `${prefix}/PRODUCT_SUCCESS`;
+export const PRODUCT_FAILURE = `${prefix}/PRODUCT_FAILURE`;
+
+export const getProduct = (productId: any) => ({
+  promise: (api: any) => api.product.product(productId),
+  types: [PRODUCT_REQUEST, PRODUCT_SUCCESS, PRODUCT_FAILURE]
+});
+

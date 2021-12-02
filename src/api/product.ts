@@ -11,4 +11,15 @@ export class Product extends Base {
         return a
     }
 
+    product(productId: any) {
+        console.log("In Product API")
+        let path = 'product?q='+productId
+        console.log('Calling apiClient from Product API###')
+        let a = this.apiClient.get(path)
+        console.log('***Path : ',a)
+        return a
+    }
+
+
+
 }

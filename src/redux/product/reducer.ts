@@ -6,6 +6,7 @@ import { IProduct } from "src/interfaces/Product.interface";
 
 export interface IProductState {
     productList: IProduct[]
+    product: IProduct
     loading: boolean
 }
 
@@ -33,8 +34,17 @@ const reducer = combineReducers<IProductState>({
             default:
                 return state;
         }
+    },
+    product(state={}, action){
+        switch (action.type){
+            case action.PRODUCT_SUCCESS:
+                return action.data;
+            case action.PRODUCT_FAILURE:
+                return {}
+            default:
+                return state
+        }
     }
-
 })
 
 
