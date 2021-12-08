@@ -1,8 +1,8 @@
-import { prefix } from './actions'
-import { IRootState } from '../reducer'
+import { prefix } from "./actions";
+import { IRootState } from "../reducer";
 
-export const loadingSelector = (state: IRootState) => state[prefix].loading
+export const loadingSelector = (state: IRootState) => state[prefix].loading;
 
-export const shopListSelector = (state: IRootState) => state[prefix].shopList
+export const shopListSelector = (state: IRootState) => state[prefix].shopList;
 
-export const shopSelector = (state: IRootState) => state[prefix].shop
+export const shopSelector = (state: IRootState) => state[prefix].shop;

@@ -1,9 +1,12 @@
-import { onSearchFilterChange, onPagenatationChange } from "src/redux/utils/actions";
+import {
+  onSearchFilterChange,
+  onPagenatationChange
+} from "src/redux/utils/actions";
 
-import { getShopList } from 'src/redux/shop/actions'
+import { getShopList } from "src/redux/shop/actions";
 
 export default {
-    getShopList,
-    onSearchFilterChange,
-    onPagenatationChange
-}
+  getShopList,
+  onSearchFilterChange,
+  onPagenatationChange
+};

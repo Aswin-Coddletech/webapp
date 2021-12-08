@@ -1,139 +1,139 @@
-@import '../../assets/styles/colors';
-@import '../../assets/styles/global';
+@import "../../assets/styles/colors";
+@import "../../assets/styles/global";
 
 .root {
-    width: 100%;
+  width: 100%;
 }
 .infoItem {
-    margin-bottom: 24px;
-    :global {
-        .ant-list {
-            &-item {
-                border-bottom: 0;
-                .ant-avatar {
-                    background-color: $melloon-primary-old;
-                }
-            }
+  margin-bottom: 24px;
+  :global {
+    .ant-list {
+      &-item {
+        border-bottom: 0;
+        .ant-avatar {
+          background-color: $melloon-primary-old;
         }
-        .ant-steps {
-            &-item {
-                &-tail::after {
-                    background-color: $melloon-primary-old !important;
-                }
-                &-icon {
-                    background-color: $melloon-primary-old;
-                    border-color: $melloon-primary-old;
-                    .ant-steps-icon {
-                        color: $white;
-                    }
-                }
-                &-content {
-                    .ant-steps-item-title {
-                        font-weight: 600 !important;
-                        color: rgba(0, 0, 0, 0.85) !important;
-                        @media (max-width: 480px) {
-                            display: block !important;
-                        }
-                    }
-                    .ant-steps-item-description {
-                        color: rgba(0, 0, 0, 0.65) !important;
-                    }
-                }
-            }
-        }
+      }
     }
+    .ant-steps {
+      &-item {
+        &-tail::after {
+          background-color: $melloon-primary-old !important;
+        }
+        &-icon {
+          background-color: $melloon-primary-old;
+          border-color: $melloon-primary-old;
+          .ant-steps-icon {
+            color: $white;
+          }
+        }
+        &-content {
+          .ant-steps-item-title {
+            font-weight: 600 !important;
+            color: rgba(0, 0, 0, 0.85) !important;
+            @media (max-width: 480px) {
+              display: block !important;
+            }
+          }
+          .ant-steps-item-description {
+            color: rgba(0, 0, 0, 0.65) !important;
+          }
+        }
+      }
+    }
+  }
 }
 .banner {
-    background-image: url(./melloon-home-bg.png);
-    padding: 56px 24px;
-    text-align: center;
-    align-items: center;
-    @media (min-width: 769px) {
-        min-height: calc(100vh - 42px);
-    }
+  background-image: url(./melloon-home-bg.png);
+  padding: 56px 24px;
+  text-align: center;
+  align-items: center;
+  @media (min-width: 769px) {
+    min-height: calc(100vh - 42px);
+  }
 }
 
 .logo {
-    display: inline-block;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    align-items: center;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
 }
 
 .header {
-    display: flex;
-    color: $white;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    align-items: center;
+  display: flex;
+  color: $white;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
 }
 
 .headerForMobile {
-    color: $white;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 700;
+  color: $white;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .headerlinks {
-    display: inline;
-    color: $white;
+  display: inline;
+  color: $white;
 }
 .buttonContainer {
-    text-align: center;
-    p {
-        color: rgba($white, 0.7);
+  text-align: center;
+  p {
+    color: rgba($white, 0.7);
+  }
+  .signButton {
+    max-width: 240px;
+    width: 100%;
+    margin-bottom: 32px;
+    font-weight: 600;
+  }
+  .signInButton {
+    background-color: transparent;
+    border: 2px solid $white;
+    color: $white;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
     }
-    .signButton {
-        max-width: 240px;
-        width: 100%;
-        margin-bottom: 32px;
-        font-weight: 600;
-    }
-    .signInButton {
-        background-color: transparent;
-        border: 2px solid $white;
-        color: $white;
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-    }
+  }
 }
 
 .footerbanner {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: center;
-    color: $white;
-    align-items: center;
-    background-color: $melloon-date-fineprint;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  color: $white;
+  align-items: center;
+  background-color: $melloon-date-fineprint;
 }
 
 .hideMeForMobile {
-    display: inline;
+  display: inline;
 }
 
 @media (max-width: 767px) {
-    .hideMeForMobile {
-        display: none;
-    }
+  .hideMeForMobile {
+    display: none;
+  }
 }
 
 .footerName {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    flex-grow: 1 !important;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-grow: 1 !important;
 }

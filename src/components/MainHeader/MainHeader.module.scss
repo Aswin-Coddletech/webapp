@@ -1,113 +1,113 @@
-@import '../../assets/styles/colors';
-@import '../../assets/styles/global';
+@import "../../assets/styles/colors";
+@import "../../assets/styles/global";
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    height: 48px;
-    background: #fff;
-    padding: 0 24px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
-    z-index: 1;
-    position: relative;
-    &.home {
-        background-color: transparent;
-        z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  background: #fff;
+  padding: 0 24px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+  z-index: 1;
+  position: relative;
+  &.home {
+    background-color: transparent;
+    z-index: 4;
 
-        .menu {
-            border-bottom: none;
-        }
+    .menu {
+      border-bottom: none;
     }
+  }
 }
 
 .logo {
-    padding-top: 10px;
-    vertical-align: middle;
-    display: inline;
+  padding-top: 10px;
+  vertical-align: middle;
+  display: inline;
 
-    img {
-        display: inline-block;
-    }
+  img {
+    display: inline-block;
+  }
 }
 
 .burger {
-    text-align: right;
-    margin-left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  text-align: right;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .actions {
-    display: flex;
-    align-items: center;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-left: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: 0;
 }
 
 .action {
-    cursor: pointer;
-    background-color: $melloon-primary;
+  cursor: pointer;
+  background-color: $melloon-primary;
 
-    @at-root a#{&} {
-        color: inherit;
-    }
+  @at-root a#{&} {
+    color: inherit;
+  }
 }
 
 .imageaction {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 :global {
-    .ant-menu-item {
-        padding-left: 10px;
-        padding-right: 0;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+  .ant-menu-item {
+    padding-left: 10px;
+    padding-right: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .hideMeForMobile {
-    display: inline;
+  display: inline;
 }
 
 @media (max-width: 767px) {
-    .hideMeForMobile {
-        display: none;
-    }
+  .hideMeForMobile {
+    display: none;
+  }
 }
 
 .dropdown {
-    :global {
-        .anticon {
-            font-size: 20px;
-            color: $melloon-primary;
-        }
+  :global {
+    .anticon {
+      font-size: 20px;
+      color: $melloon-primary;
     }
+  }
 }
 
 .dropdownmenu {
-    :global {
-        .ant-dropdown-menu-submenu {
-            &-title {
-                padding: 8px 12px;
-                .anticon {
-                    margin-right: 12px !important;
-                    color: $melloon-date-fineprint;
-                }
-            }
-            &-arrow {
-                display: none;
-            }
+  :global {
+    .ant-dropdown-menu-submenu {
+      &-title {
+        padding: 8px 12px;
+        .anticon {
+          margin-right: 12px !important;
+          color: $melloon-date-fineprint;
         }
+      }
+      &-arrow {
+        display: none;
+      }
     }
+  }
 }
 
 .disabledblue {
-    color: $melloon-disabled-menu;
+  color: $melloon-disabled-menu;
 }
 
 .locale {
-    padding-right: 30px;
+  padding-right: 30px;
 }

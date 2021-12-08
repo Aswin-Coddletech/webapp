@@ -3,7 +3,7 @@ import { applyMiddleware, compose as simpleCompose, createStore } from "redux";
 import { composeWithDevTools, EnhancerOptions } from "redux-devtools-extension";
 
 import createSagaMiddleware from "redux-saga";
-import createRootReducer from "./reducer"; 
+import createRootReducer from "./reducer";
 import apiMiddleware from "./apiMiddleware";
 import rootSaga from "./sagas";
 

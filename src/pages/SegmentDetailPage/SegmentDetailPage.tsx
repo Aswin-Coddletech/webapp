@@ -10,7 +10,7 @@ import {
   Input,
   DatePicker,
   Select,
-  InputNumber,
+  InputNumber
 } from "antd";
 import { RouteComponentProps } from "react-router-dom";
 import ss from "./SegmentDetailPage.module.scss";
@@ -54,7 +54,7 @@ export class SegmentDetailPage extends React.Component<
     this.state = {
       locationState: {},
       showIdentityModal: false,
-      showPaymentModal: false,
+      showPaymentModal: false
     };
   }
 
@@ -72,7 +72,7 @@ export class SegmentDetailPage extends React.Component<
     }
   }
 
-  updateSegmentPayment = (values) => {
+  updateSegmentPayment = values => {
     console.log(values);
     try {
       window.analytics.track("payment", {
@@ -82,7 +82,7 @@ export class SegmentDetailPage extends React.Component<
         isLoanFullyRepaid: values.isLoanFullyRepaid,
         app_name: "Back Office",
         app_version: "1.0.0",
-        utc_date_time: values.paymentDate || " ",
+        utc_date_time: values.paymentDate || " "
       });
       message.success("Segment Payment Track successfully updated");
       this.setState({ showPaymentModal: false });
@@ -91,7 +91,7 @@ export class SegmentDetailPage extends React.Component<
     }
   };
 
-  updateSegmentIdentity = (userAccount) => {
+  updateSegmentIdentity = userAccount => {
     try {
       window.analytics.identify(userAccount.userId, {
         customer_account_number: userAccount.customerAccountNumber,
@@ -114,7 +114,7 @@ export class SegmentDetailPage extends React.Component<
         status: false,
         unpaid_time: 0,
         app_name: "Back Office",
-        app_version: "1.0.0",
+        app_version: "1.0.0"
       });
       message.success("Segment Identity successfully updated");
       this.setState({ showIdentityModal: false });
@@ -123,7 +123,7 @@ export class SegmentDetailPage extends React.Component<
     }
   };
 
-  onFinish = (values) => {
+  onFinish = values => {
     console.log(values);
     this.updateSegmentPayment(values);
   };
@@ -131,7 +131,7 @@ export class SegmentDetailPage extends React.Component<
   render() {
     const IUserCardHocData = {
       loading: this.props.loading,
-      userAccount: this.props.userAccount,
+      userAccount: this.props.userAccount
     };
     const IUserCardHocCallback = {
       //onInit: this.props.onInit,
@@ -225,7 +225,7 @@ export class SegmentDetailPage extends React.Component<
                 layout="vertical"
                 initialValues={{
                   remember: true,
-                  ccy: "MXN",
+                  ccy: "MXN"
                 }}
                 onFinish={this.updateSegmentPayment}
               >
@@ -235,8 +235,8 @@ export class SegmentDetailPage extends React.Component<
                   rules={[
                     {
                       required: true,
-                      message: "Please enter Loan Number",
-                    },
+                      message: "Please enter Loan Number"
+                    }
                   ]}
                 >
                   <Input
@@ -251,8 +251,8 @@ export class SegmentDetailPage extends React.Component<
                   rules={[
                     {
                       required: true,
-                      message: "Select the Payment Currency",
-                    },
+                      message: "Select the Payment Currency"
+                    }
                   ]}
                 >
                   <Select
@@ -271,8 +271,8 @@ export class SegmentDetailPage extends React.Component<
                   rules={[
                     {
                       required: true,
-                      message: "Please enter Payment Amount",
-                    },
+                      message: "Please enter Payment Amount"
+                    }
                   ]}
                 >
                   <InputNumber
@@ -288,8 +288,8 @@ export class SegmentDetailPage extends React.Component<
                   rules={[
                     {
                       required: true,
-                      message: "Please enter Payment Date",
-                    },
+                      message: "Please enter Payment Date"
+                    }
                   ]}
                 >
                   <DatePicker
@@ -304,8 +304,8 @@ export class SegmentDetailPage extends React.Component<
                   rules={[
                     {
                       required: true,
-                      message: "Select Loan fully repaid",
-                    },
+                      message: "Select Loan fully repaid"
+                    }
                   ]}
                 >
                   <Select style={{ width: 400, marginBottom: "10px" }}>

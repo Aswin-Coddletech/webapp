@@ -134,7 +134,7 @@ export class OverduesPage extends Component<IOverduesPageProps, ILocalState> {
 
   onSelectedValues = Loan => {
     this.props.history.push({
-      pathname: ROUTES.LOANS_INSTALLMENTS_DETAIL,
+      pathname: ROUTES.ORDER_DETAIL,
       state: {
         id: Loan.loanId
       }

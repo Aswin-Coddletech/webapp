@@ -1,12 +1,12 @@
 import {
   getQuote,
   approveQuote,
-  rejectedQuote,
+  rejectedQuote
 } from "src/redux/quotes/actions";
 
 export default {
   getQuote,
   approveQuote,
   rejectedQuote,
-  refreshQuote: getQuote,
+  refreshQuote: getQuote
 };

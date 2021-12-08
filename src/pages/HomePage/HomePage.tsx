@@ -145,7 +145,7 @@ export class HomePage extends React.Component<IHomePageProps> {
             xs={24}
             style={{
               textAlign: "center",
-              justifyContent: "center",
+              justifyContent: "center"
             }}
           >
             {/* {this.renderValue()} */}

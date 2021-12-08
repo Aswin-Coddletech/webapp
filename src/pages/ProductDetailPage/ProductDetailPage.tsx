@@ -4,7 +4,8 @@ import { Spin, Row, Col, Button } from "antd";
 import { RouteComponentProps } from "react-router-dom";
 import { IProduct } from "src/interfaces/Product.interface";
 import ss from "./ProductDetail.module.scss";
-import { QuoteCard } from "../../components/QuoteCard/QuoteCard";
+//import { QuoteCard } from "../../components/QuoteCard/QuoteCard";
+import { ProductCard } from "src/components/ProductCard/ProductCard";
 import { IUserAccount } from "src/interfaces/UserAccount.interface";
 
 export interface IProductDetailPageData {
@@ -61,20 +62,25 @@ export class ProductDetailPage extends React.Component<
   render() {
     const IProductCardHocData = {
       product: this.props.product,
-      loading: this.props.loading,
-      userAccount: this.props.userAccount,
-      inspectedUser: this.props.inspectedUser,
-      approvedUser: this.props.approvedUser
+      loading: this.props.loading
+      // userAccount: this.props.userAccount,
+      // inspectedUser: this.props.inspectedUser,
+      // approvedUser: this.props.approvedUser
     };
     const IProductCardHocCallback = {
       //onInit: this.props.onInit,
     };
-    console.log("this.props", this.props);
+
+    // console.log("PpproductDetailPage data : ",this.props.product)
+    // console.log("Product details this.props :",this.props)
     return (
       <>
         <Spin spinning={this.props.loading} style={{ marginTop: "40px" }}>
           <Fragment>
-            <QuoteCard {...IProductCardHocData} {...IProductCardHocCallback} />
+            <ProductCard
+              {...IProductCardHocData}
+              {...IProductCardHocCallback}
+            />
           </Fragment>
           <div>
             {" "}

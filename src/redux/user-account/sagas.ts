@@ -5,7 +5,7 @@ import {
   getUser,
   getPolicyChangedFlag,
   USER_SUCCESS,
-  POLICY_SUCCESS,
+  POLICY_SUCCESS
 } from "./actions";
 
 import { userInfoSelector } from "./selectors";

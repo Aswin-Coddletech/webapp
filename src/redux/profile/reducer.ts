@@ -5,7 +5,7 @@ import {
   CHANGE_TOKENS,
   NEWTOKENS_SUCCESS,
   prefix,
-  CHANGE_LANGUAGE,
+  CHANGE_LANGUAGE
 } from "./actions";
 
 import { CAUGHT_LOGIN_CALLBACK } from "src/redux/cognito/actions";
@@ -248,7 +248,7 @@ const reducer = combineReducers<IProfileState>({
       default:
         return state;
     }
-  },
+  }
 });
 
 export default { [prefix]: reducer };

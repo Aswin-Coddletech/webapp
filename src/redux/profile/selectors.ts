@@ -3,27 +3,27 @@ import { createSelector } from "reselect";
 
 import { prefix } from "./actions";
 
-export const loadingSelector = (state) => state[prefix].loading;
-export const idTokenSelector = (state) => state[prefix].idToken;
-export const accessTokenSelector = (state) => state[prefix].accessToken;
-export const refreshTokenSelector = (state) => state[prefix].refershToken;
-export const expiresInSelector = (state) => state[prefix].expiresIn;
-export const tokenTypeSelector = (state) => state[prefix].tokenType;
+export const loadingSelector = state => state[prefix].loading;
+export const idTokenSelector = state => state[prefix].idToken;
+export const accessTokenSelector = state => state[prefix].accessToken;
+export const refreshTokenSelector = state => state[prefix].refershToken;
+export const expiresInSelector = state => state[prefix].expiresIn;
+export const tokenTypeSelector = state => state[prefix].tokenType;
 
-export const userIdSelector = (state) => state[prefix].userId;
-export const userEmailSelector = (state) => state[prefix].userEmail;
-export const orgIdSelector = (state) => state[prefix].orgId;
+export const userIdSelector = state => state[prefix].userId;
+export const userEmailSelector = state => state[prefix].userEmail;
+export const orgIdSelector = state => state[prefix].orgId;
 
-export const auth_time_millisecSelector = (state) =>
+export const auth_time_millisecSelector = state =>
   state[prefix].auth_time_millisec;
-export const id_token_exp_time_millisecSelector = (state) =>
+export const id_token_exp_time_millisecSelector = state =>
   state[prefix].id_token_exp_time_millisec;
-export const access_token_exp_time_millisecSelector = (state) =>
+export const access_token_exp_time_millisecSelector = state =>
   state[prefix].access_token_exp_time_millisec;
-export const refresh_token_exp_time_millisecSelector = (state) =>
+export const refresh_token_exp_time_millisecSelector = state =>
   state[prefix].refresh_token_exp_time_millisec;
 
-export const langSelector = (state) => state[prefix].language;
+export const langSelector = state => state[prefix].language;
 // const now = new Date();
 // const current_time_millisec = now.getTime();
 // if token expiry - current time < 5minutes, then unauthenticated else authenticated
@@ -50,5 +50,5 @@ export const roleSelector = () => "USER";
 
 export const userSelector = createSelector(
   idTokenSelector,
-  (idToken) => jsonwebtoken.decode(idToken) as { [key: string]: any }
+  idToken => jsonwebtoken.decode(idToken) as { [key: string]: any }
 );

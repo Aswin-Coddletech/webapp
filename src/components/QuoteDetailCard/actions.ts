@@ -1,9 +1,9 @@
 import {
   inspectedUserAccountDetail,
-  approvedUserAccountDetail,
+  approvedUserAccountDetail
 } from "src/redux/user-account/actions";
 
 export default {
   inspectedUserAccountDetail,
-  approvedUserAccountDetail,
+  approvedUserAccountDetail
 };

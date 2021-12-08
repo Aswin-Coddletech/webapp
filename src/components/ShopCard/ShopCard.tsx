@@ -1,64 +1,125 @@
 import * as React from "react";
 import { Fragment } from "react";
-import {
-  Card,
-  Descriptions,
-  Row,
-  Col,
-  Table,
-  Timeline,
-  Collapse,
-  Button
-} from "antd";
-import { ClockCircleOutlined, LinkOutlined } from "@ant-design/icons";
-import { IShop } from "src/interfaces/Shop.interface";
-import { IUserAccount } from "src/interfaces/UserAccount.interface";
-import ss from "./ShopCard.module.scss";
+import { Card, Descriptions, Collapse } from "antd";
 
-const { Column } = Table;
+import { IShop } from "src/interfaces/Shop.interface";
+
 const { Panel } = Collapse;
 
 export interface IShopCardData {}
 
 export interface IShopCardHocData {
-    loading: boolean;
-    shop: IShop;
-    userAccount: IUserAccount;
+  loading: boolean;
+  shop: IShop;
+  // userAccount: IUserAccount;
+  //   inspectedUser: any;
+  //   approvedUser: any;
 }
 
-export interface IShopCardCallbakcs {}
+export interface IShopCardCallbacks {}
 
 export interface ILocalState {
-    screenOption: number;
+  screenOption: number;
+  percentage: number;
 }
 
-export interface IShopCardProps 
-    extends IShopCardData,
-        IShopCardCallbakcs,
-        IShopCardHocData {}
+export interface IShopCardProps
+  extends IShopCardData,
+    IShopCardCallbacks,
+    IShopCardHocData {}
 
-export class ShopCard extends React.Component<IShopCardProps,ILocalState> {
-    constructor(props) {
-        super(props);
-        this.state = {
-          screenOption: 1
-        };
-    }
-
-    renderTitle = shopId => {
-        // eslint-disable-next-line
-        let t = shopId != undefined ? "Shop#:" + "\xa0" + shopId : "";
-        return t;
+export class ShopCard extends React.Component<IShopCardProps, ILocalState> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      screenOption: 1,
+      percentage: 0
     };
+  }
 
-    renderStrokeColor = score => {
-        return score > 600 ? `rgba(220, 20, 60, ${score / 100})` : `#0E86D4`;
-    };
+  componentDidMount() {
+    //nothing
+  }
 
-    renderShopStatus = status => {
-        let val = 'Shop Status: ';
-        return val+status
+  renderTitle = id => {
+    let t = id !== undefined ? "Store#:\xa0" + id : "";
+    return t;
+  };
+
+  renderShopStatus = store_status => {
+    let val = "Store Status: ";
+    return val + store_status;
+  };
+
+  renderOtherShopData = store => {
+    //const { REACT_APP_INTERCOM_LINK } = process.env;
+    return (
+      <>
+        <Collapse defaultActiveKey={["1", "2", "3"]}>
+          <Panel header={this.renderShopStatus(store.product_status)} key="1">
+            <Descriptions
+              column={{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 1 }}
+            >
+              <Descriptions.Item label="Title">
+                <span>{store.title}</span>
+              </Descriptions.Item>
+              <Descriptions.Item label="Sub Title">
+                <span>{store.sub_title}%</span>
+              </Descriptions.Item>
+              <Descriptions.Item label="Description">
+                <span>{store.description}%</span>
+              </Descriptions.Item>
+              <Descriptions.Item label="Availability">
+                <span>{store.product_availability}%</span>
+              </Descriptions.Item>
+            </Descriptions>
+          </Panel>
+          <Panel header={"Proce Details"} key="6">
+            <Descriptions
+              column={{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 1 }}
+            >
+              <Descriptions.Item label="Cost Price">
+                <span>{store.cost_price}</span>
+              </Descriptions.Item>
+              <Descriptions.Item label="Selling Price">
+                <span>{store.selling_price}</span>
+              </Descriptions.Item>
+              <Descriptions.Item label="Discount">
+                <span>{store.discount}</span>
+              </Descriptions.Item>
+              <Descriptions.Item label="Discount Price">
+                <span>{store.discount_price}</span>
+              </Descriptions.Item>
+            </Descriptions>
+          </Panel>
+        </Collapse>
+      </>
+    );
+  };
+
+  renderCard = () => {
+    const { shop, loading } = this.props;
+    if (shop) {
+      return (
+        <Card
+          loading={loading}
+          headStyle={{ textAlign: "center", fontWeight: "bold" }}
+          bodyStyle={{ textAlign: "left" }}
+          title={this.renderTitle(shop.id)}
+        >
+          <Card.Meta description={""}></Card.Meta>
+          <div>
+            {""}
+            {this.renderOtherShopData(shop)}
+            {""}
+          </div>
+        </Card>
+      );
     }
+  };
 
-    
+  render() {
+    console.log("pppros : ", this.props);
+    return <Fragment>{this.renderCard()}</Fragment>;
+  }
 }

@@ -6,4 +6,3 @@ import selector from "./selectors";
 import { ProductDetailPage } from "./ProductDetailPage";
 
 export default connect(selector, actions)(ProductDetailPage);
- 

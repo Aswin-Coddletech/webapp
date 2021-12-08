@@ -76,10 +76,9 @@ export class Quotes extends Base {
 
   quotesFilterList(filter: any, search: any) {
     let path = "/backoffice/quotes/search?" + filter + "=" + search;
-    console.log("calling apiClient  with path : ",path);
+    console.log("calling apiClient  with path : ", path);
     let a = this.apiClient.get(path);
     console.log("**quotesFilterList : in loans.ts returning api result", a);
     return a;
   }
-
 }

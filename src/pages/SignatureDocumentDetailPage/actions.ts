@@ -1,9 +1,9 @@
 import {
   getQuote,
-  getSignatureEvents,
+  getSignatureEvents
 } from "src/redux/signature-document/actions";
 
 export default {
   getQuote,
-  getSignatureEvents,
+  getSignatureEvents
 };

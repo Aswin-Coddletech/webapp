@@ -10,5 +10,5 @@ import { IQuoteDetailCardData } from "./QuoteDetailCard";
 export default createStructuredSelector<IRootState, IQuoteDetailCardData>({
   loading: loadingSelector,
   quote: quoteSelector,
-  userAccount: userAccountSelector,
+  userAccount: userAccountSelector
 });

@@ -46,7 +46,7 @@ export class DeviceLockingDetailPage extends React.Component<
     this.state = {
       locationStateDevice: {},
       completeModalVisible: false,
-      lockAction: "",
+      lockAction: ""
     };
   }
 
@@ -58,7 +58,7 @@ export class DeviceLockingDetailPage extends React.Component<
     }
   }
 
-  onFinish = (values) => {
+  onFinish = values => {
     console.log(values);
     //this.props.observationInfo(values);
   };
@@ -76,7 +76,7 @@ export class DeviceLockingDetailPage extends React.Component<
     });
   }
 
-  renderLockAction = (userItem) => {
+  renderLockAction = userItem => {
     const { locationStateDevice } = this.state;
     return (
       <div style={{ marginTop: "10px" }}>
@@ -136,7 +136,7 @@ export class DeviceLockingDetailPage extends React.Component<
     const { userItem, loading } = this.props;
     const IUserItemCardHocData = {
       userItem: this.props.userItem,
-      loading: this.props.loading,
+      loading: this.props.loading
     };
     const IUserItemCardHocCallback = {
       //onInit: this.props.onInit,

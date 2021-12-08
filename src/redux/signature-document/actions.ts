@@ -2,7 +2,7 @@ export const prefix = "signatureDocuments";
 
 export const INIT = `${prefix}/INIT`;
 export const onInit = () => ({
-  type: INIT,
+  type: INIT
 });
 
 export const QUOTEDOCUMENT_LIST_REQUEST = `${prefix}/QUOTEDOCUMENT_LIST_REQUEST`;
@@ -14,8 +14,8 @@ export const getQuotesList = (status: any) => ({
   types: [
     QUOTEDOCUMENT_LIST_REQUEST,
     QUOTEDOCUMENT_LIST_SUCCESS,
-    QUOTEDOCUMENT_LIST_FAILURE,
-  ],
+    QUOTEDOCUMENT_LIST_FAILURE
+  ]
 });
 
 export const QUOTE_REQUEST = `${prefix}/QUOTE_REQUEST`;
@@ -24,7 +24,7 @@ export const QUOTE_FAILURE = `${prefix}/QUOTE_FAILURE`;
 
 export const getQuote = (quoteId: any) => ({
   promise: (api: any) => api.quotes.quote(quoteId),
-  types: [QUOTE_REQUEST, QUOTE_SUCCESS, QUOTE_FAILURE],
+  types: [QUOTE_REQUEST, QUOTE_SUCCESS, QUOTE_FAILURE]
 });
 
 export const SIGNATURE_EVENT_REQUEST = `${prefix}/SIGNATURE_EVENT_REQUEST`;

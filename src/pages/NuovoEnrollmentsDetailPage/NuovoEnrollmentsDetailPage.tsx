@@ -41,7 +41,7 @@ export class NuovoEnrollmentsDetailPage extends React.Component<
     super(props);
     this.state = {
       locationStateEnroll: {},
-      completeModalVisible: false,
+      completeModalVisible: false
     };
   }
 
@@ -129,7 +129,7 @@ export class NuovoEnrollmentsDetailPage extends React.Component<
   render() {
     const IUserItemCardHocData = {
       userItem: this.props.userItem,
-      loading: this.props.loading,
+      loading: this.props.loading
     };
     const IUserItemCardHocCallback = {
       //onInit: this.props.onInit,

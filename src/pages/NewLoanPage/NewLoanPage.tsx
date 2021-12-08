@@ -11,7 +11,7 @@ import {
   Radio,
   Steps,
   Spin,
-  DatePicker,
+  DatePicker
 } from "antd";
 import { Redirect } from "react-router-dom";
 
@@ -32,16 +32,16 @@ const Step = Steps.Step;
 const steps = [
   {
     title: "Select Loan Options",
-    content: "First-content",
+    content: "First-content"
   },
   {
     title: "Schedule Pickup Time",
-    content: "Second-content",
+    content: "Second-content"
   },
   {
     title: "Done",
-    content: "Third-content",
-  },
+    content: "Third-content"
+  }
 ];
 
 function dayformatter(value) {
@@ -108,7 +108,7 @@ export class NewLoanPage extends Component<INewLoanPageProps, ILocalState> {
       tokenLoading: false,
       interestRate: 6, // 6% per month
       pickupDate: defaultPickupDate,
-      pickupTimeSlot: 1, // MORNING,
+      pickupTimeSlot: 1 // MORNING,
     };
 
     //set state based on input properties
@@ -128,7 +128,7 @@ export class NewLoanPage extends Component<INewLoanPageProps, ILocalState> {
         tokenLoading: false,
         interestRate: 6, // 6% per month
         pickupDate: defaultPickupDate,
-        pickupTimeSlot: 1, // MORNING,
+        pickupTimeSlot: 1 // MORNING,
       };
     }
   }
@@ -214,57 +214,57 @@ export class NewLoanPage extends Component<INewLoanPageProps, ILocalState> {
       collateralItems: [
         {
           itemId: this.props.item.itemId,
-          itemValueAmount: currency(100 || this.props.item.buyAmount).value,
-        },
+          itemValueAmount: currency(100 || this.props.item.buyAmount).value
+        }
       ],
       collateralPickupSchedule: {
         pickupDate: this.state.pickupDate,
         pickupTimeSlot: this.state.pickupTimeSlot, //MORNING (8AM-11PM), AFTERNOON(1PM-4PM), EVENING(5PM-8PM)
         pickupAddress: "USER-ADDRESS",
         deliveryAddress: "MELLOON-WAREHOUSE-ADDRESS",
-        pickupStatus: "pending",
+        pickupStatus: "pending"
       },
-      status: "pending", // pending, active, inactive etc.
+      status: "pending" // pending, active, inactive etc.
     });
   }
 
-  onPickupTimeRadioChange = (e) => {
+  onPickupTimeRadioChange = e => {
     this.setState({
-      pickupTimeSlot: e.target.value,
+      pickupTimeSlot: e.target.value
     });
   };
 
-  onRadioChange = (e) => {
+  onRadioChange = e => {
     this.setState({
-      radiovalue: e.target.value,
+      radiovalue: e.target.value
     });
   };
 
-  onFrequencyChange = (e) => {
+  onFrequencyChange = e => {
     this.setState({
-      frequency: e.target.value,
+      frequency: e.target.value
     });
   };
 
-  onTermChange = (value) => {
+  onTermChange = value => {
     this.setState({
-      term: value,
+      term: value
     });
   };
 
   onChangePickupDate = (date, dateString) => {
     this.setState({
-      pickupDate: dateString,
+      pickupDate: dateString
     });
   };
 
   redirectToProductList = () => {
     this.setState({
-      screenOption: 5,
+      screenOption: 5
     });
   };
 
-  renderPrevNextButtons = (current) => (
+  renderPrevNextButtons = current => (
     <div style={{ textAlign: "center", marginTop: "20px" }}>
       {/*(current >= 0 && current < steps.length - 1) && (
         <Button className={ss.actionbutton} type="primary" onClick={() => this.prev()} disabled={current <= 0}>
@@ -330,7 +330,7 @@ export class NewLoanPage extends Component<INewLoanPageProps, ILocalState> {
         style={{
           verticalAlign: "middle",
           display: "table",
-          marginBottom: "10px",
+          marginBottom: "10px"
         }}
       >
         <div className={ss.thumbnail}>
@@ -340,7 +340,7 @@ export class NewLoanPage extends Component<INewLoanPageProps, ILocalState> {
               width: "100%",
               height: "100%",
               overflow: "hidden",
-              objectFit: "contain",
+              objectFit: "contain"
             }}
             src={sourceurl}
             alt={"item"}
@@ -350,7 +350,7 @@ export class NewLoanPage extends Component<INewLoanPageProps, ILocalState> {
     );
   };
 
-  renderNewItemLoan = (current) => {
+  renderNewItemLoan = current => {
     switch (current) {
       case 0:
         //console.log("current step 0");
@@ -371,7 +371,7 @@ export class NewLoanPage extends Component<INewLoanPageProps, ILocalState> {
       display: "block",
       height: "30px",
       lineHeight: "30px",
-      verticalAlign: "top",
+      verticalAlign: "top"
     };
 
     const today = new Date();
@@ -475,7 +475,7 @@ export class NewLoanPage extends Component<INewLoanPageProps, ILocalState> {
       display: "block",
       height: "30px",
       lineHeight: "30px",
-      verticalAlign: "top",
+      verticalAlign: "top"
     };
 
     return (
@@ -541,7 +541,7 @@ export class NewLoanPage extends Component<INewLoanPageProps, ILocalState> {
               textAlign: "left",
               paddingRight: "20px",
               paddingBottom: "20px",
-              width: "100%",
+              width: "100%"
             }}
           >
             <Row style={{ marginBottom: "5px" }}>
@@ -594,7 +594,7 @@ export class NewLoanPage extends Component<INewLoanPageProps, ILocalState> {
               textAlign: "left",
               paddingRight: "20px",
               paddingBottom: "20px",
-              width: "100%",
+              width: "100%"
             }}
           >
             <Row style={{ marginBottom: "5px" }}>
@@ -644,13 +644,13 @@ export class NewLoanPage extends Component<INewLoanPageProps, ILocalState> {
     );
   };
 
-  renderNewDefaultLoan = (current) => {
+  renderNewDefaultLoan = current => {
     return (
       <div
         style={{
           textAlign: "center",
           paddingTop: "20px",
-          paddingBottom: "20px",
+          paddingBottom: "20px"
         }}
       >
         <p>Business Loans: Coming soon...!</p>
@@ -712,7 +712,7 @@ export class NewLoanPage extends Component<INewLoanPageProps, ILocalState> {
                   style={{
                     color: colorMelloonPrimary,
                     fontWeight: "bold",
-                    margin: "0px 0px",
+                    margin: "0px 0px"
                   }}
                 >
                   New Loan
@@ -744,7 +744,7 @@ export class NewLoanPage extends Component<INewLoanPageProps, ILocalState> {
           <Row justify="center" align="middle">
             <Col xs={24}>
               <Steps current={this.state.current}>
-                {steps.map((item) => (
+                {steps.map(item => (
                   <Step key={item.title} title={item.title} />
                 ))}
               </Steps>

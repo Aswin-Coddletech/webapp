@@ -18,7 +18,7 @@ import {
   HomeOutlined,
   SafetyOutlined,
   DollarOutlined,
-  SolutionOutlined,
+  SolutionOutlined
 } from "@ant-design/icons";
 
 const { SubMenu, Item } = Menu;
@@ -63,7 +63,7 @@ export class MainHeader extends Component<IMainHeaderProps, ILocalState> {
       country:
         window.localStorage.getItem("country") != null
           ? window.localStorage.getItem("country")
-          : process.env.REACT_APP_DEFAULT_COUNTRY,
+          : process.env.REACT_APP_DEFAULT_COUNTRY
     };
   }
   shouldComponentUpdate() {
@@ -140,35 +140,23 @@ export class MainHeader extends Component<IMainHeaderProps, ILocalState> {
     </Fragment>
   );
 
-  renderMenuIcon = (iconsrc) => {
+  renderMenuIcon = iconsrc => {
     switch (iconsrc) {
       case "HomeOutlined":
-        return (
-          <HomeOutlined />
-        );
+        return <HomeOutlined />;
       case "SafetyOutlined":
-        return (
-          <SafetyOutlined />
-        );
+        return <SafetyOutlined />;
       case "DollarOutlined":
-        return (
-          <DollarOutlined />
-        );
+        return <DollarOutlined />;
       case "SolutionOutlined":
-        return (
-          <SolutionOutlined />
-        );
+        return <SolutionOutlined />;
       default:
-        return (
-          <HomeOutlined />
-        );
+        return <HomeOutlined />;
     }
   };
 
   renderBurgerMenu = () => {
-    const filteredMenu = MAIN_MENU.filter(
-      (value) => !value.hideMenuForMobileMvp
-    );
+    const filteredMenu = MAIN_MENU.filter(value => !value.hideMenuForMobileMvp);
     let i = 0;
     for (i = 0; i < filteredMenu.length; i++) {
       let j = 0;
@@ -209,9 +197,7 @@ export class MainHeader extends Component<IMainHeaderProps, ILocalState> {
   };
 
   renderBlueBurgerMenu = () => {
-    const filteredMenu = MAIN_MENU.filter(
-      (value) => !value.hideMenuForMobileMvp
-    );
+    const filteredMenu = MAIN_MENU.filter(value => !value.hideMenuForMobileMvp);
     let i = 0;
     for (i = 0; i < filteredMenu.length; i++) {
       let j = 0;
@@ -227,7 +213,7 @@ export class MainHeader extends Component<IMainHeaderProps, ILocalState> {
         <SubMenu
           className={ss.dropdownmenu}
           title={
-            <span >
+            <span>
               {this.renderMenuIcon(iconsrc)}
               {label}
             </span>
@@ -254,11 +240,11 @@ export class MainHeader extends Component<IMainHeaderProps, ILocalState> {
     );
   };
 
-  handleChange = (value) => {
+  handleChange = value => {
     this.props.changeLang(value);
   };
 
-  handleCountryChange = (value) => {
+  handleCountryChange = value => {
     this.setState({ country: value }, () => {
       window.localStorage.setItem("country", value);
       window.location.reload();
@@ -304,10 +290,7 @@ export class MainHeader extends Component<IMainHeaderProps, ILocalState> {
   render() {
     return (
       <Fragment>
-        <Row
-          justify="space-between"
-          className={ss.header}
-        >
+        <Row justify="space-between" className={ss.header}>
           <Col xs={12} className={ss.logo} onClick={this.redirectHome}>
             <div className={ss.logo}>
               <img
@@ -317,7 +300,7 @@ export class MainHeader extends Component<IMainHeaderProps, ILocalState> {
                   height: "28px",
                   width: "105px",
                   verticalAlign: "middle",
-                  cursor: "pointer",
+                  cursor: "pointer"
                 }}
               />
             </div>

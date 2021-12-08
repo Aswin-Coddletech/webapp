@@ -245,14 +245,14 @@ export default {
   YT: "Mayotte",
   ZA: "South Africa",
   ZM: "Zambia",
-  ZW: "Zimbabwe",
+  ZW: "Zimbabwe"
 } as { [key: string]: string };
 
 export const REGION_COUNTRIES_MAP = {
   "North America": [
     // tslint:disable: prettier
     "CA",
-    "US",
+    "US"
     // tslint:enable: prettier
   ],
   "Latin America": [
@@ -261,7 +261,7 @@ export const REGION_COUNTRIES_MAP = {
     "CL",
     "MX",
     "CO",
-    "PE",
+    "PE"
     // tslint:enable: prettier
   ],
   "Western Europe": [
@@ -280,7 +280,7 @@ export const REGION_COUNTRIES_MAP = {
     "NL",
     "NO",
     "PT",
-    "SE",
+    "SE"
     // tslint:enable: prettier
   ],
   "Eastern Europe": [
@@ -296,7 +296,7 @@ export const REGION_COUNTRIES_MAP = {
     "RO",
     "RS",
     "SI",
-    "UA",
+    "UA"
     // tslint:enable: prettier
   ],
   "Asia ex China": [
@@ -312,7 +312,7 @@ export const REGION_COUNTRIES_MAP = {
     "KH",
     "TH",
     "TW",
-    "VN",
+    "VN"
     // tslint:enable: prettier
   ],
   China: ["CN"],
@@ -330,7 +330,7 @@ export const REGION_COUNTRIES_MAP = {
     "NG",
     "SN",
     "TG",
-    "TN",
+    "TN"
     // tslint:enable: prettier
-  ],
+  ]
 } as { [key: string]: string[] };

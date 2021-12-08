@@ -9,6 +9,10 @@ import OrderPage from "./pages/OrderPage";
 import ProductPage from "./pages/ProductPage";
 import SellerPage from "./pages/SellerPage";
 import ShopDetailPage from "./pages/ShopDetailPage";
+import ProductDetailPage from "./pages/ProductDetailPage";
+import CustomerDetailPage from "./pages/CustomerDetailPage";
+import SellerDetailPage from "./pages/SellerDetailPage";
+import OrderDetailPage from "./pages/OrderDetailPage";
 
 import CognitoCallback from "./components/CognitoCallback";
 import PrivateRoute from "./components/PrivateRoute";
@@ -75,22 +79,60 @@ import RepaymentDetailPage from "./pages/RepaymentDetailPage";
 
 import DataSciencePage from "./pages/DataSciencePage";
 
-
-
 const ROUTES_OPTIONS = [
   {
     path: ROUTES.LANDING_PAGE,
     component: LandingPage,
     exact: true,
-    private: false,
+    private: false
   },
 
-  { path:ROUTES.CUSTOMER, component: CustomerPage, exact: true, private: true},
-  { path:ROUTES.SHOP, component: ShopPage, exact: true, private: true },
-  { path:ROUTES.ORDER, component: OrderPage, exact: true, private: true },
-  { path:ROUTES.PRODUCT, component: ProductPage, exact: true, private: true },
-  { path:ROUTES.SELLER, component: SellerPage, exact: true, private: true },
-  { path:ROUTES.SHOP_DETAIL, component: ShopDetailPage, exact: true, private: true },
+  {
+    path: ROUTES.CUSTOMER,
+    component: CustomerPage,
+    exact: true,
+    private: true
+  },
+  { path: ROUTES.SHOP, component: ShopPage, exact: true, private: true },
+  { path: ROUTES.ORDER, component: OrderPage, exact: true, private: true },
+  { path: ROUTES.PRODUCT, component: ProductPage, exact: true, private: true },
+  { path: ROUTES.SELLER, component: SellerPage, exact: true, private: true },
+  {
+    path: ROUTES.SHOP_DETAIL,
+    component: ShopDetailPage,
+    exact: true,
+    private: true
+  },
+  {
+    path: ROUTES.PRODUCT_DETAIL,
+    component: ProductDetailPage,
+    exact: true,
+    private: true
+  },
+  {
+    path: ROUTES.PRODUCT_DETAIL,
+    component: ProductDetailPage,
+    exact: true,
+    private: true
+  },
+  {
+    path: ROUTES.CUSTOMER_DETAIL,
+    component: CustomerDetailPage,
+    exact: true,
+    private: true
+  },
+  {
+    path: ROUTES.ORDER_DETAIL,
+    component: OrderDetailPage,
+    exact: true,
+    private: true
+  },
+  {
+    path: ROUTES.SELLER_DETAIL,
+    component: SellerDetailPage,
+    exact: true,
+    private: true
+  },
 
   { path: ROUTES.HOME, component: HomePage, exact: true, private: true },
 
@@ -100,20 +142,20 @@ const ROUTES_OPTIONS = [
     path: ROUTES.INSURANCE_MANAGE_POLICIES,
     component: ManagePoliciesPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.INSURANCE_NEW_POLICY,
     component: NewPolicyPage,
     exact: true,
-    private: true,
+    private: true
   },
 
   {
     path: ROUTES.QUOTES_APPROVALS,
     component: QuoteApprovalPage,
     exact: true,
-    private: true,
+    private: true
   },
 
   { path: ROUTES.COGNITO_CALLBACK, component: CognitoCallback, exact: true },
@@ -123,230 +165,230 @@ const ROUTES_OPTIONS = [
     path: ROUTES.USER_ACCOUNT_MANAGE,
     component: ManageUserAccountPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.QUOTES_SEARCH,
     component: QuotesSearchPage,
     exact: true,
-    private: false,
+    private: false
   },
   {
     path: ROUTES.QUOTES_DETAIL,
     component: QuotesDetailPage,
     exact: true,
-    private: false,
+    private: false
   },
 
   {
     path: ROUTES.INSTANT_QUOTE,
     component: InstantQuotePage,
     exact: true,
-    private: false,
+    private: false
   },
   {
     path: ROUTES.QUOTES_APPROVAL_DETAIL,
     component: QuoteApprovalDetailPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.QUOTES_REGISTRATION,
     component: QuoteRegistrationPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.REGISTRATION_DETAIL,
     component: RegistrationDetailPage,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.QUOTES_ENROLLMENT,
     component: QuoteEnrollmentPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.ENROLLMENT_DETAIL,
     component: EnrollmentDetailPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.QUOTES_INSPECTIONS,
     component: ManageInspectionsPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.INSPECTION_DETAIL,
     component: InspectionDetailPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.QUOTES_SIGNATURE_DOCUMENT,
     component: SignatureDocumentPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.QUOTES_SIGNATURE_DOCUMENT_DETAIL,
     component: SignatureDocumentDetailPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.NEW_QUOTES_PAGE,
     component: NewQuotesPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.NEW_QUOTES_DETAIL_PAGE,
     component: NewQuotesDetailPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.LOANS,
     component: ManageLoansPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.LOANS_DETAIL,
     component: LoanDetailPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.LOANS_DISBURSALS,
     component: DisbursalPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.LOANS_DISBURSALS_DETAIL,
     component: DisbursalDetailPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.MANUAL_STPMEX_DETAIL,
     component: ManualSTPMEXDetailPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.MANUAL_BBVA_DETAIL,
     component: ManualBBVADetailPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.LOANS_PAYORDERS,
     component: PayOrdersPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.LOANS_PAYORDERS_DETAIL,
     component: PayOrdersDetailPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.LOANS_INSTALLMENTS,
     component: InstallmentsPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.LOANS_INSTALLMENTS_DETAIL,
     component: InstallmentsDetailPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.LOANS_OVERDUES,
     component: OverduesPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.LOANS_REPAYMENTS,
     component: LoanRepaymentPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.LOANS_REPAYMENT_DETAIL,
     component: RepaymentDetailPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.NUOVO_ENROLLMENTS,
     component: NuovoEnrollmentsPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.NUOVO_ENROLLMENTS_DETAIL,
     component: NuovoEnrollmentsDetailPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.DEVICE_LOCKING,
     component: DeviceLockingPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.DEVICE_LOCKING_DETAIL,
     component: DeviceLockingDetailPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.USERS_KYC_STATUS,
     component: KycStatusPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.USERS_DETAIL,
     component: UserDetailPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.USERS_SEARCH,
     component: UserSearchPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.USERS_SEGMENT_IDENTITY,
     component: SegmentIdentityPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.USERS_SEGMENT_IDENTITY_DETAIL,
     component: SegmentDetailPage,
     exact: true,
-    private: true,
+    private: true
   },
   {
     path: ROUTES.DEVICE_INTELLIGENCE,
     component: DataSciencePage,
     exact: true,
-    private: true,
-  },
+    private: true
+  }
 ];
 
 const Routes = () => (
@@ -354,7 +396,7 @@ const Routes = () => (
     <Switch>
       {ROUTES_OPTIONS.map(
         ({ path, component: Component, private: priv, exact, ...rest }) => {
-          const render = (props) => (
+          const render = props => (
             <Component {...Object.assign({}, props, rest)} />
           );
 
@@ -363,7 +405,7 @@ const Routes = () => (
                 exact,
                 render,
                 path,
-                key: path,
+                key: path
               }
             : { exact, component: Component, path, key: path };
 

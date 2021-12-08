@@ -210,21 +210,24 @@ export default class ApiClient {
     //   process.env.REACT_APP_API_PREFIX + "/" + this.country + url
     // );
 
-    let env_path = process.env.REACT_APP_API_PREFIX + "/" + this.country + url
-    console.log(url[0], url[0]==='c')
-    if (url[0] === 'c' | url[0]==='s' | url[0]==='p' | url[0]==='o'){
-      env_path="http://localhost:8000/"+ url
+    let env_path = process.env.REACT_APP_API_PREFIX + "/" + this.country + url;
+    console.log(url[0], url[0] === "c");
+    if (
+      (url[0] === "c") |
+      (url[0] === "s") |
+      (url[0] === "p") |
+      (url[0] === "o")
+    ) {
+      env_path = "http://localhost:8000/" + url;
     }
 
-    console.log('**URL path =',env_path)
+    console.log("**URL path =", env_path);
 
     this.country =
       window.localStorage.getItem("country") ||
       process.env.REACT_APP_DEFAULT_COUNTRY;
 
-    const req = superagent[method](
-     env_path
-    );
+    const req = superagent[method](env_path);
 
     if (params) req.query(params);
     if (body) req.send(body);
@@ -239,7 +242,7 @@ export default class ApiClient {
     // eslint-disable-next-line no-console
     console.log("@@@@@--request object : ", req);
 
-    return req.then((res) => {
+    return req.then(res => {
       // eslint-disable-next-line no-console
       console.log("response object", res);
       //if (!res.body.status) throw res.body.error;
@@ -274,7 +277,7 @@ export default class ApiClient {
     console.log(
       "in api getNewTokens fetching new tokens using the refresh token"
     );
-      
+
     const binArrayToJson = function(binArray) {
       let str = "";
       for (let i = 0; i < binArray.length; i++) {
@@ -282,7 +285,7 @@ export default class ApiClient {
       }
       return JSON.parse(str);
     };
-    
+
     console.log(
       "refreshToken from local storage ",
       window.localStorage.getItem("refresh_token") ? "value notnull" : null
@@ -294,10 +297,10 @@ export default class ApiClient {
       ClientId: process.env.REACT_APP_COGNITO_CLIENT_ID,
       AuthFlow: "REFRESH_TOKEN_AUTH",
       AuthParameters: {
-        REFRESH_TOKEN: my_refresh_token,
+        REFRESH_TOKEN: my_refresh_token
         //SECRET_HASH: "your_secret", // In case you have configured client secret
         // eslint-disable-next-line comma-dangle
-      },
+      }
     };
 
     const newreq = superagent.post(
@@ -315,7 +318,7 @@ export default class ApiClient {
 
     // NOTE: The return is MUST; else you will get a weird type-error from HomePage actions
     return newreq
-      .then((res) => {
+      .then(res => {
         console.log("successfully back from cognito");
         console.log("response object is below");
         console.log(res);
@@ -369,7 +372,7 @@ export default class ApiClient {
         );
         return cognitoData;
       })
-      .catch((e) => {
+      .catch(e => {
         console.log(
           "api getNewTokens - error in fetching new tokens using refresh token",
           e
@@ -389,12 +392,12 @@ export default class ApiClient {
     //console.log('getImageLabels newreq', newreq);
 
     return newreq
-      .then((res) => {
+      .then(res => {
         console.log("back from superagent imagedetect");
         //console.log('back from superagent. res', res);
         return res.body.detectedLabels;
       })
-      .catch((e) => {
+      .catch(e => {
         //console.log('api getImageLabels - error in fetching labels', e);
         throw new Error(e);
       });

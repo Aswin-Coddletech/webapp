@@ -1,8 +1,8 @@
 import { connect } from "react-redux";
 
-import actions from './actions'
-import selector from './selectors'
+import actions from "./actions";
+import selector from "./selectors";
 
-import { OrderPage } from './OrderPage'
+import { OrderPage } from "./OrderPage";
 
-export default connect(selector,actions)(OrderPage)
+export default connect(selector, actions)(OrderPage);

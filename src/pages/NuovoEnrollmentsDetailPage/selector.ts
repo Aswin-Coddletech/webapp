@@ -3,7 +3,7 @@ import { IRootState } from "../../redux/reducer";
 
 import {
   loadingSelector,
-  userItemSelector,
+  userItemSelector
 } from "src/redux/user-items/selectors";
 
 import { INuovoEnrollmentsDetailPageData } from "./NuovoEnrollmentsDetailPage";
@@ -13,5 +13,5 @@ export default createStructuredSelector<
   INuovoEnrollmentsDetailPageData
 >({
   loading: loadingSelector,
-  userItem: userItemSelector,
+  userItem: userItemSelector
 });

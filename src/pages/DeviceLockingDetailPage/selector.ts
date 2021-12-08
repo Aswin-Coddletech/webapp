@@ -4,7 +4,7 @@ import { IRootState } from "../../redux/reducer";
 import {
   loadingSelector,
   userItemSelector,
-  lockActionSuccessSelector,
+  lockActionSuccessSelector
 } from "src/redux/user-items/selectors";
 
 import { IDeviceLockingDetailPageData } from "./DeviceLockingDetailPage";
@@ -15,5 +15,5 @@ export default createStructuredSelector<
 >({
   loading: loadingSelector,
   userItem: userItemSelector,
-  lockActionSuccess: lockActionSuccessSelector,
+  lockActionSuccess: lockActionSuccessSelector
 });

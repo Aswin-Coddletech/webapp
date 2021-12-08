@@ -1,9 +1,9 @@
 import {
   getDisbursal,
-  saveManualBBVATransaction,
+  saveManualBBVATransaction
 } from "src/redux/loans/actions";
 
 export default {
   getDisbursal,
-  saveManualBBVATransaction,
+  saveManualBBVATransaction
 };

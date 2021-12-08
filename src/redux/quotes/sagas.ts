@@ -5,7 +5,7 @@ import { INIT, QUOTE_SUCCESS } from "./actions";
 import {
   approvedUserAccountDetail,
   inspectedUserAccountDetail,
-  userAccountDetail,
+  userAccountDetail
 } from "src/redux/user-account/actions";
 
 import //someSelector,

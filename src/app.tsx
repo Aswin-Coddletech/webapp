@@ -24,7 +24,7 @@ const history = createBrowserHistory();
 
 addLocationQuery(history);
 
-history.listen((location) => {
+history.listen(location => {
   addLocationQuery(history);
 });
 

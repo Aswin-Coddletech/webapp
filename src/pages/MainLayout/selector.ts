@@ -7,7 +7,7 @@ import {
   refresh_token_exp_time_millisecSelector,
   langSelector,
   userIdSelector,
-  userEmailSelector,
+  userEmailSelector
 } from "src/redux/profile/selectors";
 
 import { IRootState } from "src/redux/reducer";
@@ -21,5 +21,5 @@ export default createStructuredSelector<IRootState, IMainLayoutData>({
   refresh_token_exp_time_millisec: refresh_token_exp_time_millisecSelector,
   lang: langSelector,
   userId: userIdSelector,
-  userEmail: userEmailSelector,
+  userEmail: userEmailSelector
 });

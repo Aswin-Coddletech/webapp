@@ -1,4 +1,3 @@
-import {
-    inspectedUserAccountDetail,
-    approvedUserAccountDetail,
-  } from "src/redux/user-account/actions";
+import {} from "src/redux/user-account/actions";
+
+export default {};

@@ -46,7 +46,7 @@ const reducer = combineReducers<ISignatureDocumentState>({
       default:
         return state;
     }
-  },
+  }
 });
 
 export default { [actions.prefix]: reducer };

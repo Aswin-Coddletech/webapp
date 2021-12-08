@@ -42,7 +42,7 @@ export class LoanCard extends React.Component<ILoanCardProps, ILocalState> {
   constructor(props) {
     super(props);
     this.state = {
-      screenOption: 1,
+      screenOption: 1
     };
   }
 
@@ -68,13 +68,13 @@ export class LoanCard extends React.Component<ILoanCardProps, ILocalState> {
     return `${amountFormatted}`;
   };
 
-  renderTitle = (loanId) => {
+  renderTitle = loanId => {
     // eslint-disable-next-line
     let t = "Loan#:" + "\xa0" + loanId || "";
     return t;
   };
 
-  renderActions = (rowItem) => (
+  renderActions = rowItem => (
     <span className={ss.actions}>
       <PlusCircleOutlined
         className={ss.action}
@@ -84,12 +84,12 @@ export class LoanCard extends React.Component<ILoanCardProps, ILocalState> {
     </span>
   );
 
-  renderLoanStatus = (status) => {
+  renderLoanStatus = status => {
     let val = "Loan Status: ";
     return val + status;
   };
 
-  renderPickupTimeSlot = (timeSlot) => {
+  renderPickupTimeSlot = timeSlot => {
     switch (timeSlot) {
       case 1:
         return "Morning 8:00AM-12:00PM";
@@ -102,7 +102,7 @@ export class LoanCard extends React.Component<ILoanCardProps, ILocalState> {
     }
   };
 
-  renderOtherLoanData = (loan) => {
+  renderOtherLoanData = loan => {
     return (
       <div style={{ marginTop: "10px" }}>
         <Descriptions

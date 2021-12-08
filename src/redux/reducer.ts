@@ -23,12 +23,11 @@ import signatureDocument, {
 import userItems, { IUserItemsState } from "./user-items/reducer";
 import utils, { IUtilState } from "./utils/reducer";
 import customer, { ICustomerState } from "./customer/reducer";
-import shop, { IShopState } from './shop/reducer'
-import order, { IOrderState } from './order/reducer'
-import product, { IProductState} from './product/reducer'
+import shop, { IShopState } from "./shop/reducer";
+import order, { IOrderState } from "./order/reducer";
+import product, { IProductState } from "./product/reducer";
 
-import seller,{ ISellerState } from "./seller/reducer";
-
+import seller, { ISellerState } from "./seller/reducer";
 
 export interface IRootState {
   loans: ILoanState;
@@ -45,7 +44,7 @@ export interface IRootState {
   userItems: IUserItemsState;
   utils: IUtilState;
   customer: ICustomerState;
-  shop:IShopState;
+  shop: IShopState;
   order: IOrderState;
   product: IProductState;
   seller: ISellerState;

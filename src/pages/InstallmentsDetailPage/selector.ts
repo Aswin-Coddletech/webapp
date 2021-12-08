@@ -4,7 +4,7 @@ import { IRootState } from "src/redux/reducer";
 import {
   installemntDataSelector,
   installemntPaymentDataSelector,
-  loadingSelector,
+  loadingSelector
 } from "src/redux/loans/selectors";
 
 import { IInstallmentsDetailPageData } from "./InstallmentsDetailPage";
@@ -15,5 +15,5 @@ export default createStructuredSelector<
 >({
   installmentData: installemntDataSelector,
   installmentPaymentData: installemntPaymentDataSelector,
-  loading: loadingSelector,
+  loading: loadingSelector
 });

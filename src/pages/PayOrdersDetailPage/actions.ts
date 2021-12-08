@@ -1,9 +1,9 @@
 import {
   getPayOrder,
-  saveManualSTPMEXTransaction,
+  saveManualSTPMEXTransaction
 } from "src/redux/loans/actions";
 
 export default {
   getPayOrder,
-  saveManualSTPMEXTransaction,
+  saveManualSTPMEXTransaction
 };

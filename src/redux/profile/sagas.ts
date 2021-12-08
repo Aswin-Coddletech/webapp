@@ -8,7 +8,7 @@ import {
   SIGNUP,
   CHANGE_TOKENS,
   NEWTOKENS_SUCCESS,
-  NEWTOKENS_FAILURE,
+  NEWTOKENS_FAILURE
 } from "src/redux/profile/actions";
 
 export function* loginSuccess(history, api) {

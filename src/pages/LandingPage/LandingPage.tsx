@@ -19,7 +19,7 @@ export interface ILandingPageData {
 }
 export interface ILandingPageCallbacks {
   logout: any;
-  login: any; 
+  login: any;
   signup: any;
   fetchNewTokens(): any;
 }

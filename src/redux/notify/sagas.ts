@@ -1,7 +1,7 @@
 import { notification } from "antd";
 import { takeEvery } from "redux-saga/effects";
 
-const toString = (obj) =>
+const toString = obj =>
   Object.entries(obj)
     .map(([key, val]) => `${key}: ${val}`)
     .join(", ");
@@ -15,7 +15,7 @@ export function* notify() {
         notification.error({
           message: action.error.code,
           description: action.error.message || toString(action.error.fields),
-          duration: 7,
+          duration: 7
         });
       } else if (
         action.error.response &&
@@ -28,13 +28,13 @@ export function* notify() {
             action.error.response.body.error ||
             action.error.message ||
             "Unknown Error",
-          duration: 7,
+          duration: 7
         });
       } else {
         notification.error({
           message: action.error.code || "Action Failed",
           description: action.error.message || "Unknown Error",
-          duration: 7,
+          duration: 7
         });
       }
     }
